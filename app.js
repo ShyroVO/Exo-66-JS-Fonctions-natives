@@ -1,11 +1,18 @@
-console.log(random());
-
-let entier = document.getElementById("entier");
-let flottant = document.getElementById("flottant");
-let nonNumerique = document.getElementById("non-numerique");
-let randome = document.getElementById("random");
-let trunc = document.getElementById("trunc");
-let replace = document.getElementById("replace");
+let entierElement = document.getElementById("entier").innerHTML;
+let flottantElement = document.getElementById("flottant").innerHTML;
+let nonNumElement = document.getElementById("non-numerique").innerHTML;
+let truncElement = document.getElementById("trunc").innerHTML;
+let replaceElement = document.getElementById("replace").innerHTML;
 let operande = 10;
 
-entier.innerHTML= "text";
+entierElement= entierElement * operande;
+flottantElement= flottantElement * operande;
+randomElement = Math.floor(Math.random() * 100);
+truncElement = Math.trunc(truncElement);
+replaceElement = replaceElement.replace("world","Bosquet Laurie")
+
+document.getElementById("entier").innerText= entierElement ;
+document.getElementById("flottant").innerText= (flottantElement + entierElement) ;
+document.getElementById("random").innerText= randomElement;
+document.getElementById("trunc").innerText= truncElement;
+document.getElementById("replace").innerText= replaceElement;
